@@ -12,7 +12,7 @@ class CollectData:
 
         self.__dm_url = 'https://api.dmarket.com/exchange/v1/market/items?side=market&orderBy=updated&orderDir=desc&title=&priceFrom=2&priceTo=1540&treeFilters=exterior%5B%5D=factory%20new,exterior%5B%5D=minimal%20wear,exterior%5B%5D=field-tested,exterior%5B%5D=well-worn,exterior%5B%5D=battle-scarred,category_1%5B%5D=not_souvenir&gameId=a8db&types=dmarket&cursor=&limit=100&currency=USD'
         self.__raw_guns_info = []
-
+        self.__raw = 0
     @staticmethod
     def get_key():
         key = requests.get('https://market.csgo.com/api/v2/get-ws-auth?key=6HJIhgR3sE4i122IPZ62pD95cbk36jq').json().get(
